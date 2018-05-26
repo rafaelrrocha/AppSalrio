@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="11dp"
         android:text="Selecione o seu cargo:"
         android:textSize="24sp" />
 
@@ -21,10 +21,9 @@
         android:id="@+id/radioGroupId"
         android:layout_width="200dp"
         android:layout_height="130dp"
-        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/botaoEscolherId"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="87dp">
+        android:layout_marginTop="50dp">
 
         <RadioButton
             android:id="@+id/gerenteId"
@@ -53,15 +52,78 @@
         android:id="@+id/botaoEscolherId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Escolher" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="199dp"
+        android:text="Horas extras trabalhadas:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/textHoraExtraId"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_toEndOf="@+id/radioGroupId"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="223dp"
+        android:layout_marginStart="11dp"
+        android:text="Faltas:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/textFaltaId"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="81dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="158dp"
+        android:text="Nº de Filhos"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/textFilhoId"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:ems="10"
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/textExibicaoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="186dp"
+        android:layout_alignStart="@+id/botaoEscolherId"
+        android:layout_marginBottom="35dp"
         android:textSize="18sp" />
+
 </RelativeLayout>
